@@ -1,15 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 m-auto">
+          <div class="card">
+            <div class="card-header">
+                <Header />
+            </div>
+            <div class="card-body">
+             <AddTask />
+             <TodoLists/>
+            </div>
+            <div class="card-footer">
+               <Footer/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/header/Header.vue'
+import AddTask from './components/addTask/AddTask.vue'
+import TodoLists from './components/todoLists/TodoLists.vue'
+import Footer from './components/footer/Footer.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    AddTask,
+    TodoLists,
+    Footer
   }
 }
 </script>
