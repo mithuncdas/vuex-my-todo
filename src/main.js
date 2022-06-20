@@ -7,4 +7,10 @@ import App from './App.vue'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 
-createApp(App).mount('#app')
+
+/**
+ * import vuex
+ */
+import store from './store/index.js'
+
+createApp(App).use(store).mount('#app')
